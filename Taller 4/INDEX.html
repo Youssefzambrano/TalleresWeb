@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Css/style.css" rel="stylesheet" type="text/css">
+    
+    <title>Registro</title>
+</head>
+<body>
+<script src="/validacionTaller4.js"></script>
+<div class="contenedor">
+    <form  method = GET class="col s12" onsubmit="validar1()">
+    <H2>Formulario de registro</H2>
+    <div class="formulario">
+        <div>Pais<br>
+            <select name="Lista">
+                <option value="CO">Colombia</option> 
+                <option value="MX">Mexico</option> 
+                <option value="CH">Chile</option>
+            </select>
+        </div>
+        <div>Nombre: <br><input id="Nombre" type="text" name="fname" class="validate" placeholder="Nombre"/></div>
+        <div>Apellidos: <br><input id="Apellidos" type="text" name="fname" class="validate" placeholder="Apellidos"/></div>
+        <div>Contraseña: <br><input id="Ccpassword" type="password" name="password" class="validate" placeholder="Contraseña"/></div>
+        <div>Confirme Contraseña: <br><input id="Ccpassword2" type="password" name="password" class="validate" placeholder="Contraseña"/></div>
+        <div>Direccion: 
+            <br><select name="Tipo">
+                <option value="CL">Cll</option> 
+                <option value="CR">Cra</option> 
+                <option value="AV">Av</option>
+                <option value="AN">Anv</option>
+                <option value="TR">Trans</option>
+            </select>
+            <input type="text" name="direccion" placeholder="Direccion"/>
+        <div>
+        <div>Numero de cedula: <br><input id="CC" type="text" name="cedula" placeholder="Cedula"/></div>
+        <div>Email: <br><input id="email" type="text" name="email" placeholder="Email"/></div>
+        <div>Telefono: <br><input type="text" name="telefono" placeholder="Telefono"/></div>
+        <div class = "input-field">
+            <button type="submit" name="action">Registrarme
+        </div>   
+    </div>
+    <H2>Gustos</H2>
+    <div>
+        <div><input type="radio">Registrar gustos</div>
+        <div>Color favorito: <br><input type="text" name="color" placeholder="Color"/></div>
+        <div>Marca de carro favorito: <br><input type="text" name="marca" placeholder="Marca"/></div>
+        <div>Estilo de carro favorito: <br><input type="text" name="estilo" placeholder="Estilo"/></div>
+        <div>Modelo de carro favorito: <br><input type="text" name="modelo" placeholder="Modelo"/></div> 
+    </div>
+</form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('select');
+var instances = M.FormSelect.init(elems);
+});
+</script>
+
+<script type="text/javascript">
+ function mostrar(){
+   document.getElementById('ocultoxd').style.display= 'block';
+
+
+ }
+
+
+</script>
+</body>
+</html>

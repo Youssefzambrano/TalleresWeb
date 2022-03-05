@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Formulario HTML&CSS</h1>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="id">idCoche:</label> 
+            <input type="number" id="id" 
+            placeholder="numero de identificacion"  name="id"  
+            /><br/>
+           <br/>
+           <label for="select-Movidoa">idMovidoa: </label> 
+           <select name="select-Movidoa">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">Gasolina</option>
+                   <option value="2">Electrico</option>                 
+            </select>
+            <br/>  
+            <br/>
+           <label for="select-TipoCoche">idTipoCoche: </label> 
+           <select name="select-TipoCoche">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">Coupé</option>
+                   <option value="2">Familiar</option>
+                   <option value="3">4x4</option>
+            </select>
+            <br/>  
+            <br/>
+           <label for="select-Estado">idEstado: </label> 
+           <select name="select-Estado">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">Nuevo</option>
+                   <option value="2">Usado</option>
+            </select>
+            <br/>  
+            <br/>
+           <label for="select-Marca">idMarca: </label> 
+           <select name="select-Marca">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">Mercedes-benz</option>
+                   <option value="2">BMW</option>
+                   <option value="3">Audi</option>
+            </select>
+            <br/>  
+            <br/>
+           <label for="select-Usr">idUsr: </label> 
+           <select name="select-Usr">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">comprador</option>
+                   <option value="2">vendedor</option>
+            </select>
+            <br/>  
+            <br/>
+            <label for="Modelo">Modelo:</label>
+            <input type="text" id="Modelo" 
+            placeholder="escribe" required="true" name="Modelo"/><br/>
+            <br/>
+            <label for="Anio">Anio:</label>
+            <input type="text" id="Anio" 
+            placeholder="escribe" required="true" name="Anio"/><br/>
+            <br/>
+            <label for="detalle">Detalle:</label>
+            <textarea name="detalle" rows="1" cols="20"> </textarea> 
+            <br/>
+            <br/>
+            <label for="Caja">Caja:</label> 
+            <input type="number" id="Caja" 
+             name="Caja"  
+            /><br/>  
+            <br/>
+            <label for="Motor">Motor:</label>
+            <input type="text" id="Motor" 
+            placeholder="escribe" required="true" name="Motor"/><br/>
+            <br/>
+            <label for="FechaPub">FechaPub:</label>
+            <input type="text" id="FechaPub" 
+            placeholder="escribe" required="true" name="FechaPub"/><br/>
+            <br/>
+            <label for="Precio">Precio:</label> 
+            <input type="number" id="Precio" 
+             name="Precio"  
+            /><br/>
+            <br/>
+           <label for="Moneda">Moneda: </label> 
+           <select name="Moneda">
+               <option value="1" selected disabled>Seleccione</option>
+                   <option value="1">COP</option>
+                   <option value="2">DOL</option>
+            </select>
+            <br/>  
+            <br/>
+            <label for="descripcion">Descripciones del carro:</label>
+            <div name="descripcion">
+                <textarea name="CC_pic01" rows="1" cols="20"> </textarea> 
+                <textarea name="CC_pic02" rows="1" cols="20"> </textarea> 
+                <textarea name="CC_pic02" rows="1" cols="20"> </textarea>  
+            </div>
+            <br/>
+            <label for="CC_destac">CC_destac:</label>
+            <input type="text" id="CC_destac" 
+            placeholder="escribe" required="true" name="CC_destac"/><br/>
+            <br/>
+            <button type="submit" class="pure-button pure-button-primary">Registro</button>
+
+            
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

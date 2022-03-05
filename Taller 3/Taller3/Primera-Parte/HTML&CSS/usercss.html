@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Formulario HTML&CSS</h1>
+    <form>
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="id">idUsuario:</label> 
+            <input type="number" id="id" 
+            placeholder="numero de identificacion"  name="id"  
+           /><br/>
+           <br>
+           <label for="select-pais">idPais: </label> 
+           <select name="select-pais">
+               <option value="1" selected disabled>Elija un Pais</option>
+                   <option value="1">100</option>
+                   <option value="2">101</option>
+                   <option value="3">102</option>
+            </select>
+            <br>  
+            <br/>
+            <label for="nombre">nombre:</label>
+            <input type="text" id="nombre" 
+            placeholder="escribe" required="true" name="nombre"/><br/>
+            <br/>
+            <label for="Apellido">Apellido:</label> 
+            <input type="text" id="Apellido" 
+            placeholder="escribe" required="true" name="Apellido"/><br/>  
+            <br/>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" 
+            placeholder="escribe" required="true" name="direccion"/><br/>
+            <br/>
+            <label for="Password">Password</label>
+                <input type="password" id="password" 
+                name="password" required="true">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" 
+            placeholder="email"/><br/>
+            <br/>
+            <label for="ccusuario">ccusuario:</label>
+            <input placeholder="numero de cedula" type="text" id="ccusuario" name="ccusuario"/><br>
+            <br/>
+            <label for="telefono">Telefono:</label>
+            <input placeholder="numero telefonico" type="text" id="telefono" name="telefono"/>
+            <br/>
+            
+            <br>
+            <input type="submit" value="Registro" />
+
+            
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

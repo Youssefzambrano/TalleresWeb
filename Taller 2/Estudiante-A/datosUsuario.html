@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Css/style.css" rel="stylesheet" type="text/css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <H2>Rellena tu CV</H2>
+    <div class="formulario">
+        <div>Nombre <br><input type="text" name="fname" placeholder="Nombre"/></div>
+        <div>Apellidos <br><input type="text" name="fname" placeholder="Apellidos"/></div>
+        <div>Contraseña: <br><input type="text" name="password" placeholder="Contraseña"/></div>
+        <div>Confirme Contraseña: <br><input type="text" name="password" placeholder="Contraseña"/></div>
+        <div>Identificación: <br>
+            <select name="Tipo">
+                <option value="TI">TI</option> 
+                <option value="CC">CC</option> 
+                <option value="CE">CE</option>
+            </select>
+            <input type="text" name="id" placeholder="identificacion"/>
+        </div>
+        <div>Sexo:
+            <br><input type="radio" name="hombre" value="1">Hombre
+            <br><input type="radio" name="hombre" value="1">Mujer
+        </div>
+        <div>Incluir mi foto <br><input type="button" value="Examinar...">No se ha encontrado ningun archivo</div>
+        <div><input type="checkbox" name="casilla">Estudiante...</div>
+        <div>Datos Personales</div>
+        <div>Departamento: <br>
+            <select name="Selecciona">
+                <option value="SAN">Santander</option> 
+                <option value="BOY">Boyaca</option> 
+                <option value="CUN">Cundinamarca</option>
+            </select>
+        </div>
+        <div>Fecha de nacimiento <br><input type="text" name="dia" placeholder=""/>de 
+            <select name="Selecciona">
+            <option value="EN">Enero</option> 
+            <option value="FE">Febrero</option> 
+            <option value="MAR">Marzo</option>
+            </select>de<input type="text" name="año" placeholder=""/>
+        </div>
+        <div>Temas de interés <br>
+                Adminitracion de bases de datos <br>
+                Análisis y programaición <br>
+                Arquitectura <br>
+                Calidad <br>
+                ERP, CMR, Business Intelligence
+        </div>
+        <div><input type="button" value="Guardar Cambios">
+            <input type="button" value="Borrar los datos introducidos">
+        </div>
+        
+    </div>
+
+</body>
+</html>
