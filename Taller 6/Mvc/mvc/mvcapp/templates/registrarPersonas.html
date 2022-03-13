@@ -1,0 +1,28 @@
+{% extends 'plantilla.html' %}
+{% load crispy_forms_tags%}
+{% block body%}
+    
+  
+    
+    {% if form.errors %}
+    
+      <div class="alert alert-warning" role="alert">
+        
+      </div>
+
+    {% endif %}
+    <h1>Registro de personas</h1>
+    <form action=" {% url 'save' %} " method="POST">
+        {% csrf_token %}
+        {% if message %}
+          <div class="alert alert-success" role="alert">
+            registro satosfactorio  
+          </div>
+        {% endif %}
+    
+    {{ form|crispy }}
+     <br>
+    <button type="submit" class="btn btn-secondary">guardar</button>
+    </form>
+{% endblock %}
+     

@@ -1,0 +1,52 @@
+{% extends 'plantilla.html' %}
+
+{% block body%}
+    <h1>Tabla de datos</h1>
+    {% if message %}
+          <div class="alert alert-success" role="alert">
+            eliminado satosfactorio  
+          </div>
+    {% endif %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo Documento</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Lugar de residencia</th>
+            <th scope="col">Fecha de nacimiento</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">password</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+
+          </tr>
+        </thead>
+        {% if personas %}
+        <tbody>
+          {% for perso in personas %}
+          <tr>
+            <th scope="row">{{perso.id}}</th>
+            <td>{{ perso.nombres }}</td>
+            <td>{{ perso.apellidos }}</td>
+            <td>{{ perso.idtipodocumento }}</td>
+            <td>{{ perso.documento }}</td>
+            <td>{{ perso.lugarresidencia }}</td>
+            <td>{{ perso.fechanacimiento }}</td>
+            <td>{{ perso.email }}</td>
+            <td>{{ perso.telefono }}</td>
+            <td>{{ perso.usuario }}</td>
+            <td>{{ perso.password }}</td>
+            <td><a class="btn btn-warning" href="{% url 'edit' perso.id  %}">Editar</a></td>
+            <td><a class="btn btn-danger" href="{% url 'delete' perso.id %}">Eliminar</a></td>
+            
+          </tr>
+          {% endfor %}
+        </tbody>
+        {% endif %}
+      </table>
+{% endblock %}

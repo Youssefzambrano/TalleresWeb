@@ -1,0 +1,29 @@
+{% extends 'plantilla.html' %}
+{% load crispy_forms_tags%}
+{% block body%}
+    
+  
+    
+    {% if form.errors %}
+    
+      <div class="alert alert-warning" role="alert">
+        
+      </div>
+
+    {% endif %}
+    <h1>Actualizar de personas</h1>
+    <form action="{% url 'update' persona.id %}" method="POST">
+        {% csrf_token %}
+        {% if message %}
+          <div class="alert alert-success" role="alert">
+            registro satosfactorio  
+          </div>
+        {% endif %}
+    
+    {{ form|crispy }}
+     <br>
+    <button type="submit" class="btn btn-secondary">Guardar</button>
+    <a class="btn btn-danger" href="{% url 'index' %}">Cancelar</a>
+    </form>
+{% endblock %}
+     
